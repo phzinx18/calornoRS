@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebeaea;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #feff00;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#home {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    position: relative;
+    left: 40%;
+    transform: translate(-50%);
+}
+
+#home h2 {
+    font-size: 2em;
+    color: #feff00;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+#home img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#causa, #riscos, #prevencao {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+#causa h2, #riscos h2, #prevencao h2 {
+    font-size: 2em;
+    color: #feff00;
+    margin-bottom: 10px;
+}
+
+#causa p, #riscos p, #prevencao p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+#causa strong, #riscos strong, #prevencao strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #feff00;
+}
+
+#causa, #prevencao{
+    position: relative;
+    left: 60%;
+    transform: translate(-50%);
+}
+
+#riscos{
+    position: relative;
+    left: 40%;
+    transform: translate(-50%);
+}
+
+#causa a, #riscos a, #prevencao a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#riscos li{
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: #333;
+    color: #feff00;
+    text-align: center;
+    padding: 10px 0;
+}
+
+button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #feff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* modo escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #ccc;
+}  
+
+body.dark-mode nav {    
+    background-color: #ccc;
+}
+
+body.dark-mode nav a {    
+    color: #feff00;
+}
+
+body.dark-mode #home, body.dark-mode #causa, body.dark-mode #riscos, body.dark-mode #prevencao {    
+    background-color: #ccc;
+}
+
+body.dark-mode #home p, body.dark-mode #causa p, body.dark-mode #riscos p, body.dark-mode #prevencao p {
+    color: #333;
+}
+body.dark-mode footer {
+    background-color: #ccc;
+    color: #feff00;
+}
+
+body.dark-mode #riscos li{
+    color: #333;
+}
+
+body.dark-mode button{
+    background-color: #ccc;
+}
+
+/* responsividade */
+
+@media (max-width: 600px) {
+
+    nav li {
+        margin: 10px 10px;
+    }
+
+    #home {
+        width: 70%;
+        left: 0;
+        transform: none;
+        padding: 20px;
+    }
+
+    #home h2 {
+        font-size: 1.5em;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+    #causa, #riscos, #prevencao {
+        padding: 20px;
+    }
+
+    #riscos li {
+        line-height: 1.5;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
